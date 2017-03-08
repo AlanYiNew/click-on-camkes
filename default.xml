@@ -16,7 +16,7 @@
     />
 
     <remote name="AlanYiNew"
-        fetch="."
+        fetch="../AlanYiNew"
     />
 
     <remote name="SEL4PROJ"
