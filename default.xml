@@ -112,5 +112,6 @@
         fetch="../AlanYiNew"/>
         <project remote="AlanYiNew" name="sel4-common-tool.git" path="tools/common"/>
         <project remote="AlanYiNew" name="libcpp.git" path="libs/libc++"/>
+        <project remote="AlanYiNew" name="helloworld-camkes.git" path="apps/helloworld"/>    
 </manifest>
 
