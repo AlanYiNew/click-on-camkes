@@ -1,9 +1,0 @@
-[core]
-	repositoryformatversion = 0
-	filemode = true
-[filter "lfs"]
-	smudge = git-lfs smudge --skip -- %f
-[remote "seL4"]
-	url = https://github.com/AlanYiNew/camkes-apps-simple--devel.git
-	projectname = camkes-apps-simple--devel.git
-	fetch = +refs/heads/*:refs/remotes/seL4/*

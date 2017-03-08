@@ -1,7 +1,0 @@
-# pack-refs with: peeled fully-peeled 
-4655c2a33faff5bb3ca6ea0372ca072110274fb6 refs/remotes/SEL4PROJ/camkes-2.0.x-compatible
-4655c2a33faff5bb3ca6ea0372ca072110274fb6 refs/remotes/SEL4PROJ/camkes-2.1.x-compatible
-68c1886b5a0899b49ffa5ce6d9f78c4385eef17f refs/remotes/SEL4PROJ/camkes-2.2.x-compatible
-409cf837f5713e7fa48db00a0851cb5bdfa650a3 refs/remotes/SEL4PROJ/camkes-2.3.x-compatible
-855da6c2d54903a12f5c9a0cce5dd18435430761 refs/remotes/SEL4PROJ/master
-cae3729de25b83737a7164f88e9b91c3961f6f3a refs/remotes/SEL4PROJ/next

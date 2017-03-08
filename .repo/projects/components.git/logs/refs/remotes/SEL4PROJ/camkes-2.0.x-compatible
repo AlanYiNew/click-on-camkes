@@ -1,1 +1,0 @@
-0000000000000000000000000000000000000000 4655c2a33faff5bb3ca6ea0372ca072110274fb6 alanYi <245655664@qq.com> 1488976700 -0800	fetch --progress SEL4PROJ --tags +refs/heads/*:refs/remotes/SEL4PROJ/* +refs/heads/master:refs/remotes/SEL4PROJ/master: storing head
