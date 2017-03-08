@@ -1,1 +1,0 @@
-0000000000000000000000000000000000000000 e578af9e1fd2f2cc827231b6ac5c88889940d09f alanYi <245655664@qq.com> 1488974643 -0800	fetch --progress origin --tags +refs/heads/*:refs/remotes/origin/* +refs/heads/master:refs/remotes/origin/master: storing head
