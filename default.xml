@@ -15,10 +15,6 @@
         fetch="."
     />
 
-    <remote name="AlanYiNew"
-        fetch="../AlanYiNew"
-    />
-
     <remote name="SEL4PROJ"
         fetch="../SEL4PROJ"
     />
