@@ -20,11 +20,11 @@ source "apps/helloworld/Kconfig"
 ```
 save it and type make menuconfig under the project folder. Configure toolchain prefix to arm-linux-gnueabi- under unbuntu environment and change the application to use helloword.
 
-####last second step
+###last second step
 Copy the https://github.com/AlanYiNew/sel4-common-tool/blob/master/common.mk into camkes-project/tools/common/
 which should override the existing one
 
-####Finally
+###Finally
 make clean
 make
 qemu-system-arm -M kzm -nographic -kernel images/capdl-loader-experimental-image-arm-imx31
