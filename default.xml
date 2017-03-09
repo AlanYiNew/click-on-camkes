@@ -12,7 +12,7 @@
 
 <manifest>
     <remote name="seL4"
-        fetch="../seL4"
+        fetch="."
     />
 
     <remote name="SEL4PROJ"
@@ -25,22 +25,21 @@
     />
 
     <!-- list of 'projects' (i.e repositories), path is relative to the path in remote above -->
-    <project remote="seL4" name="camkes-apps-simple--devel.git" path="apps/simple" revision="master"/>
-    <project remote="seL4" name="camkes-apps-event--devel.git" path="apps/event" revision="master"/>
-    <project remote="seL4" name="camkes-apps-dataport--devel.git" path="apps/dataport"/>
+    <project name="camkes-apps-simple--devel.git" path="apps/simple" revision="master"/>
+    <project name="camkes-apps-event--devel.git" path="apps/event" revision="master"/>
+    <project name="camkes-apps-dataport--devel.git" path="apps/dataport"/>
 
-    <project remote="seL4" name="seL4.git" path="kernel">
+    <project name="seL4.git" path="kernel">
         <linkfile src="libsel4" dest="libs/libsel4"/>
     </project>
 
-    <project remote="seL4" name="seL4_tools.git" path="projects/seL4_tools">
+    <project name="seL4_tools.git" path="projects/seL4_tools">
+        <linkfile src="common-tool" dest="tools/common"/>
         <linkfile src="elfloader-tool" dest="tools/elfloader"/>
         <linkfile src="kbuild-tool" dest="tools/kbuild"/>
     </project>
 
-    
-
-    <project remote="seL4" name="camkes-tool.git" path="tools/camkes">
+    <project name="camkes-tool.git" path="tools/camkes">
         <linkfile src="toplevel.mk" dest="Makefile"/>
         <linkfile src="Kbuild" dest="Kbuild"/>
         <linkfile src="libsel4camkes" dest="libs/libsel4camkes"/>
@@ -48,15 +47,15 @@
         <linkfile src="docs/index.md" dest="README.md"/>
     </project>
 
-    <project remote="seL4" name="capdl.git" path="projects/capdl">
+    <project name="capdl.git" path="projects/capdl">
         <linkfile src="capdl-loader-app" dest="apps/capdl-loader-experimental"/>
         <linkfile src="capDL-tool" dest="tools/capDL"/>
         <linkfile src="python-capdl-tool" dest="tools/python-capdl"/>
     </project>
 
-    <project remote="seL4" name="pruner.git" path="tools/pruner"/>
+    <project name="pruner.git" path="tools/pruner"/>
 
-    <project remote="seL4" name="seL4_libs.git" path="projects/seL4_libs">
+    <project name="seL4_libs.git" path="projects/seL4_libs">
         <linkfile src="libsel4muslcsys" dest="libs/libsel4muslcsys"/>
         <linkfile src="libsel4platsupport" dest="libs/libsel4platsupport"/>
         <linkfile src="libsel4utils" dest="libs/libsel4utils"/>
@@ -69,19 +68,18 @@
         <linkfile src="libsel4bench" dest="libs/libsel4bench"/>
     </project>
 
-    
-    <project remote="seL4" name="util_libs.git" path="projects/util_libs">
+    <project name="util_libs.git" path="projects/util_libs">
         <linkfile src="libplatsupport" dest="libs/libplatsupport"/>
         <linkfile src="libcpio" dest="libs/libcpio"/>
         <linkfile src="libelf" dest="libs/libelf"/>
         <linkfile src="libutils" dest="libs/libutils"/>
     </project>
 
-    <project remote="seL4" name="musllibc.git" path="libs/libmuslc" revision="sel4"/>
+    <project name="musllibc.git" path="libs/libmuslc" revision="sel4"/>
 
     <project remote="SEL4PROJ" name="global-components.git" path="components"/>
 
-    <project remote="seL4" name="camkes.git" path="projects/camkes">
+    <project name="camkes.git" path="projects/camkes">
         <!-- symlinks to make the project structure fit the build system -->
         <linkfile src="Kconfig" dest="Kconfig"/>
         <linkfile src="configs" dest="configs"/>
@@ -108,10 +106,5 @@
         <linkfile src="apps/cached-hardware-dataport" dest="apps/cached-hardware-dataport"/>
     </project>
 
-    <remote name="AlanYiNew"
-        fetch="../AlanYiNew"/>
-        <project remote="AlanYiNew" name="sel4-common-tool.git" path="tools/common"/>
-        <project remote="AlanYiNew" name="libcpp.git" path="libs/libc++"/>
-        <project remote="AlanYiNew" name="helloworld-camkes.git" path="apps/helloworld"/>    
-</manifest>
 
+</manifest>
